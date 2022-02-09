@@ -1,6 +1,105 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
 body {
-  background-color: rebeccapurple; }
+  font-family: sans-serif; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto; }
+
+.btn:link, .btn:visited {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
+  transition: all .4s; }
+
+.btn--purple {
+  background-color: #784bff;
+  color: #fff;
+  margin-right: 2rem; }
+
+.btn--gray {
+  background-color: #eeecec;
+  color: #784bff; }
+
+.btn:hover {
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px); }
+
+.btn:active {
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px); }
+
+.btn--share {
+  color: #424242; }
+  .btn--share:not(:last-child) {
+    margin-right: 2rem; }
+
+.fa-twitter::before,
+.fa-facebook-official::before {
+  font-size: 3rem;
+  margin-right: .6rem; }
+
+.header {
+  padding-top: 2.5rem; }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem; }
+  .header__logo {
+    width: 10rem; }
+  .header__container {
+    display: flex;
+    justify-content: space-between; }
+  .header__text {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6rem 14rem 0 0; }
+    .header__text-shape {
+      width: 5rem; }
+    .header__text-main {
+      font-size: 3rem;
+      font-weight: 900;
+      font-family: 'Lucida Sans', Geneva, Verdana, sans-serif; }
+    .header__text-paragraph {
+      font-size: 1.6rem;
+      font-family: 'Quintessential', cursive;
+      font-weight: 600;
+      color: #424242; }
+    .header__text-share {
+      font-size: 1.6rem; }
+    .header__text-company {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 3rem;
+      color: #424242; }
+  .header__image {
+    flex: 1;
+    width: 100%; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
