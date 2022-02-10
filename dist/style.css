@@ -13,7 +13,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background-color: #fafafa; }
 
 ul, li {
   list-style: none; }
@@ -24,6 +25,32 @@ a {
 .container {
   max-width: 114rem;
   margin: 0 auto; }
+
+.header__secondary-main {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 900; }
+
+.header__secondary-paragraph {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #424242;
+  font-family: 'Quintessential', cursive;
+  display: inline-block;
+  margin-bottom: 10rem; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-margin-auto {
+  margin: 0 auto; }
+
+.u-width-40 {
+  width: 40%; }
+
+.u-margin-bottom {
+  margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
   font-size: 1.2rem;
@@ -60,6 +87,59 @@ a {
 .fa-facebook-official::before {
   font-size: 3rem;
   margin-right: .6rem; }
+
+.features {
+  padding: 20rem 0; }
+  .features__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5rem; }
+  .features__group {
+    text-align: center; }
+    .features__group-image {
+      width: 13rem; }
+    .features__group-header {
+      padding: 2rem 0;
+      font-family: 'Rowdies', sans-serif;
+      font-weight: 700;
+      font-size: 2rem; }
+    .features__group-paragraph {
+      font-size: 1.8rem;
+      font-family: 'Cormorant Garamond', serif; }
+  .features__box {
+    background-color: #3a3050;
+    color: #fff;
+    grid-column: 2 / -1;
+    border-radius: 20px;
+    padding: 3rem 4rem;
+    margin-left: 20%; }
+    .features__box-header {
+      font-size: 3rem;
+      font-family: 'Rowdies', sans-serif; }
+    .features__box-paragraph {
+      padding: 3rem 0;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      font-weight: 900;
+      font-family: 'Quintessential', cursive; }
+    .features__box-input {
+      width: 100%;
+      display: inline-block;
+      border-radius: 40px;
+      padding: 2.5rem 2rem;
+      border: none; }
+      .features__box-input::placeholder {
+        font-size: 1.6rem; }
+    .features__box-btn {
+      position: absolute;
+      border-radius: 40px;
+      font-size: 2rem;
+      padding: 2rem 4rem;
+      margin-left: -18rem;
+      border: none;
+      cursor: pointer; }
 
 .header {
   padding-top: 2.5rem; }
