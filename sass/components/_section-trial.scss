@@ -1,0 +1,14 @@
+.trial {
+    padding: 10rem 0;
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__image {
+        background-color: $color-gray-light-1;
+        padding: 12rem 6rem;
+        clip-path: ellipse(42% 51% at 52% 51%);
+    }
+}

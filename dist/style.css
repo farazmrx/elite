@@ -39,7 +39,7 @@ a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
   display: inline-block;
-  margin-bottom: 10rem; }
+  margin-bottom: 7rem; }
 
 .u-text-center {
   text-align: center; }
@@ -83,6 +83,11 @@ a {
   color: #424242; }
   .btn--share:not(:last-child) {
     margin-right: 2rem; }
+
+.btn--dark {
+  background-color: #33334f;
+  color: #fff;
+  font-weight: 900; }
 
 .fa-twitter::before,
 .fa-facebook-official::before {
@@ -174,6 +179,17 @@ a {
       margin-bottom: 1rem; }
     .services__group-text {
       color: #fa5e5e; }
+
+.trial {
+  padding: 10rem 0; }
+  .trial__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .trial__image {
+    background-color: #eeecec;
+    padding: 12rem 6rem;
+    clip-path: ellipse(42% 51% at 52% 51%); }
 
 .header {
   padding-top: 2.5rem; }

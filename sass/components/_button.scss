@@ -37,4 +37,10 @@
         }
         color: $color-gray-dark-1;
     }
+
+    &--dark {
+        background-color: $footer-color;
+        color: $color-white;
+        font-weight: 900;
+    }
 }
