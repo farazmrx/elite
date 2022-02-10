@@ -28,7 +28,7 @@ a {
 
 .header__secondary-main {
   margin: 2rem 0;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 900; }
 
@@ -36,7 +36,8 @@ a {
   font-size: 1.6rem;
   font-weight: 900;
   color: #424242;
-  font-family: 'Quintessential', cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
   display: inline-block;
   margin-bottom: 10rem; }
 
@@ -140,6 +141,19 @@ a {
       margin-left: -18rem;
       border: none;
       cursor: pointer; }
+
+.application {
+  padding-bottom: 20rem; }
+  .application__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .application__image {
+    flex: 0 0 50%; }
+    .application__image-img {
+      width: 100%; }
+  .application__text {
+    flex: 0 0 40%; }
 
 .header {
   padding-top: 2.5rem; }
