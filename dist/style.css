@@ -89,6 +89,10 @@ a {
   font-size: 3rem;
   margin-right: .6rem; }
 
+.fa-fire::before {
+  font-size: 3rem;
+  color: #fa5e5e; }
+
 .features {
   padding: 20rem 0; }
   .features__container {
@@ -154,6 +158,22 @@ a {
       width: 100%; }
   .application__text {
     flex: 0 0 40%; }
+
+.services {
+  padding-bottom: 10rem; }
+  .services__container {
+    display: flex;
+    justify-content: center; }
+  .services__group {
+    text-align: center;
+    margin: 0 2rem; }
+    .services__group-icon {
+      background-color: rgba(250, 94, 94, 0.253);
+      padding: 2rem;
+      border-radius: 15px;
+      margin-bottom: 1rem; }
+    .services__group-text {
+      color: #fa5e5e; }
 
 .header {
   padding-top: 2.5rem; }
