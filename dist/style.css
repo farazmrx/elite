@@ -98,6 +98,56 @@ a {
   font-size: 3rem;
   color: #fa5e5e; }
 
+.fa-instagram::before {
+  font-size: 3rem;
+  color: #ff1841; }
+
+.fa-telegram::before {
+  font-size: 3rem;
+  color: #24a3dc; }
+
+.fa-whatsapp::before {
+  font-size: 3rem;
+  color: #00fe6c; }
+
+.fa-google::before {
+  font-size: 3rem;
+  color: #fff; }
+
+.fa-youtube-play::before {
+  font-size: 3rem;
+  color: #d60000; }
+
+.fa-pagelines {
+  color: #00afe9; }
+
+.fa-renren {
+  color: #f3000d; }
+
+.fa-flickr {
+  color: #fff; }
+
+.fa-magic {
+  color: #2b61c4; }
+
+.fa-meetup {
+  color: #fafc00; }
+
+.fa-medium {
+  color: #b200ac; }
+
+.fa-quora {
+  color: #00b12a; }
+
+.fa-dropbox {
+  color: #5100fe; }
+
+.fa-tumblr {
+  color: #7abef9; }
+
+.fa-check-circle {
+  color: #aa00fe; }
+
 .features {
   padding: 20rem 0; }
   .features__container {
@@ -181,7 +231,7 @@ a {
       color: #fa5e5e; }
 
 .trial {
-  padding: 10rem 0; }
+  padding: 10rem 0 0 0; }
   .trial__container {
     display: flex;
     justify-content: space-around;
@@ -189,7 +239,8 @@ a {
   .trial__image {
     background-color: #eeecec;
     padding: 12rem 6rem;
-    clip-path: ellipse(42% 51% at 52% 51%); }
+    clip-path: ellipse(42% 51% at 52% 51%);
+    z-index: -1; }
 
 .header {
   padding-top: 2.5rem; }
@@ -230,6 +281,44 @@ a {
   .header__image {
     flex: 1;
     width: 100%; }
+
+.footer {
+  background-color: #33334f;
+  padding: 10rem 0 3rem 0;
+  margin-top: -5rem; }
+  .footer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__header-text {
+      flex: 0 0 45%; }
+    .footer__header-main {
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 2rem; }
+    .footer__header-paragraph {
+      color: #8d8d8d;
+      font-size: 1.3rem; }
+  .footer__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem 0; }
+    .footer__main-item {
+      margin-bottom: 2rem; }
+    .footer__main-link {
+      color: #8d8d8d;
+      font-size: 1.5rem; }
+  .footer__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__footer-social i {
+      margin: 0 1rem; }
+
+.copyright__paragraph {
+  color: #eeecec;
+  font-size: 2rem;
+  font-family: 'Quintessential', cursive; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
