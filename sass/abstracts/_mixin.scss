@@ -1,0 +1,29 @@
+//small phone 400px
+//phone 500px
+//tablet 768px
+//laptop 1024px
+//desktop 1200
+//bigscreen 1800 min
+
+//1em = 16px
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == smallphone {
+        @media (max-width: 25em) {@content}; //400px
+    }
+    @if $breakpoint == phone {
+        @media (max-width: 31.25em) {@content}; //500px
+    }
+    @if $breakpoint == tablet {
+        @media (max-width: 48em) {@content}; //768px
+    }
+    @if $breakpoint == laptop {
+        @media (max-width: 64em) {@content}; //1024px
+    }
+    @if $breakpoint == desktop {
+        @media (max-width: 75em) {@content}; //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {@content}; //1800px
+    }
+}

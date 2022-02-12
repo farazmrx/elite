@@ -11,6 +11,21 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
+  @media (max-width: 64em) {
+    html {
+      font-size: 43.75%; } }
+  @media (max-width: 48em) {
+    html {
+      font-size: 37.5%; } }
+  @media (max-width: 31.25em) {
+    html {
+      font-size: 31.25%; } }
+  @media (max-width: 25em) {
+    html {
+      font-size: 25%; } }
 
 body {
   font-family: sans-serif;
@@ -23,7 +38,7 @@ a {
   text-decoration: none; }
 
 .container {
-  max-width: 114rem;
+  max-width: 108rem;
   margin: 0 auto; }
 
 .header__secondary-main {
@@ -197,9 +212,12 @@ a {
       border-radius: 40px;
       font-size: 2rem;
       padding: 2rem 4rem;
-      margin-left: -18rem;
+      margin-left: -17.5rem;
       border: none;
       cursor: pointer; }
+      @media (min-width: 112.5em) {
+        .features__box-btn {
+          padding: 1.7rem 4rem; } }
 
 .application {
   padding-bottom: 20rem; }
