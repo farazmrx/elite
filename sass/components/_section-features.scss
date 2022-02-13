@@ -1,6 +1,10 @@
 .features {
     padding: 20rem 0;
 
+    @include respond(phone) {
+        padding: 10rem 0;
+    }
+
     &__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -35,6 +39,9 @@
         border-radius: 20px;
         padding: 3rem 4rem;
         margin-left: 20%;
+        @include respond(tablet) {
+            margin-left: 0;
+        }
 
         &-header {
             font-size: 3rem;
@@ -81,6 +88,10 @@
 
             @include respond(desktop) {
                 padding: 1.6rem 4rem;
+            }
+
+            @include respond(phone) {
+                padding: 2.37rem 4rem;
             }
         }
     }

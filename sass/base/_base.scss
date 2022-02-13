@@ -54,4 +54,8 @@ a {
 .container {
     max-width: 108rem;
     margin: 0 auto;
+
+    @include respond(tablet) {
+        max-width: 90rem;
+    }
 }

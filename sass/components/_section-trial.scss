@@ -11,5 +11,10 @@
         padding: 12rem 6rem;
         clip-path: ellipse(42% 51% at 52% 51%);
         z-index: -1;
+        &-img {
+            @include respond(tablet) {
+                width: 30rem;
+            }
+        }
     }
 }
