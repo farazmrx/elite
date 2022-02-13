@@ -119,6 +119,26 @@ a {
   font-size: 3rem;
   color: #fa5e5e; }
 
+.fa-houzz::before {
+  font-size: 3rem;
+  color: #269eda; }
+
+.fa-steam::before {
+  font-size: 3rem;
+  color: #cead00; }
+
+.fa-reddit::before {
+  font-size: 3rem;
+  color: #009d5b; }
+
+.fa-lastfm::before {
+  font-size: 3rem;
+  color: #5d3ca6; }
+
+.fa-shield::before {
+  font-size: 3rem;
+  color: #6697ff; }
+
 .fa-instagram::before {
   font-size: 3rem;
   color: #ff1841; }
@@ -276,13 +296,60 @@ a {
   .services__group {
     text-align: center;
     margin: 0 2rem; }
-    .services__group-icon {
-      background-color: rgba(250, 94, 94, 0.253);
+    .services__group-icon-1 {
+      background-color: rgba(250, 94, 94, 0.233);
       padding: 2rem;
+      width: 8rem;
+      height: 8rem;
       border-radius: 15px;
       margin-bottom: 1rem; }
-    .services__group-text {
+    .services__group-icon-2 {
+      background-color: rgba(38, 158, 218, 0.212);
+      padding: 2rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 15px;
+      margin-bottom: 1rem; }
+    .services__group-icon-3 {
+      background-color: rgba(206, 172, 0, 0.212);
+      padding: 2rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 15px;
+      margin-bottom: 1rem; }
+    .services__group-icon-4 {
+      background-color: rgba(0, 157, 92, 0.226);
+      padding: 2rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 15px;
+      margin-bottom: 1rem; }
+    .services__group-icon-5 {
+      background-color: rgba(94, 60, 166, 0.212);
+      padding: 2rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 15px;
+      margin-bottom: 1rem; }
+    .services__group-icon-6 {
+      background-color: rgba(102, 150, 255, 0.219);
+      padding: 2rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 15px;
+      margin-bottom: 1rem; }
+    .services__group-text-1 {
       color: #fa5e5e; }
+    .services__group-text-2 {
+      color: #269eda; }
+    .services__group-text-3 {
+      color: #cead00; }
+    .services__group-text-4 {
+      color: #009d5b; }
+    .services__group-text-5 {
+      color: #5d3ca6; }
+    .services__group-text-6 {
+      color: #6697ff; }
 
 .trial {
   padding: 10rem 0 0 0; }
