@@ -15,6 +15,9 @@
             @include respond(tablet) {
                 width: 30rem;
             }
+            @include respond(smallphone) {
+                width: 25rem;
+            }
         }
     }
 }

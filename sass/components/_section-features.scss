@@ -10,6 +10,13 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 5rem;
+
+        @include respond(smallphone) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-gap: 3rem;
+        }
     }
 
     &__group {
@@ -41,6 +48,13 @@
         margin-left: 20%;
         @include respond(tablet) {
             margin-left: 0;
+        }
+
+        @include respond(smallphone) {
+            grid-column: 1 / -1;
+            border-radius: 20px;
+            padding: 6rem 6rem;
+            margin: 0 auto;
         }
 
         &-header {

@@ -179,6 +179,12 @@ a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 5rem; }
+    @media (max-width: 25em) {
+      .features__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 3rem; } }
   .features__group {
     text-align: center; }
     .features__group-image {
@@ -201,6 +207,12 @@ a {
     @media (max-width: 48em) {
       .features__box {
         margin-left: 0; } }
+    @media (max-width: 25em) {
+      .features__box {
+        grid-column: 1 / -1;
+        border-radius: 20px;
+        padding: 6rem 6rem;
+        margin: 0 auto; } }
     .features__box-header {
       font-size: 3rem;
       font-family: 'Rowdies', sans-serif; }
@@ -246,6 +258,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 25em) {
+      .application__container {
+        justify-content: space-around; } }
   .application__image {
     flex: 0 0 50%; }
     .application__image-img {
@@ -283,6 +298,9 @@ a {
     @media (max-width: 48em) {
       .trial__image-img {
         width: 30rem; } }
+    @media (max-width: 25em) {
+      .trial__image-img {
+        width: 25rem; } }
 
 .header {
   padding-top: 2.5rem; }
@@ -388,6 +406,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 25em) {
+      .footer__header {
+        justify-content: space-around; } }
     .footer__header-text {
       flex: 0 0 45%; }
     .footer__header-main {
@@ -401,6 +422,9 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 10rem 0; }
+    @media (max-width: 25em) {
+      .footer__main {
+        justify-content: space-around; } }
     .footer__main-item {
       margin-bottom: 2rem; }
     .footer__main-link {
@@ -410,6 +434,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media (max-width: 25em) {
+      .footer__footer {
+        justify-content: space-around; } }
     .footer__footer-social i {
       margin: 0 1rem; }
 

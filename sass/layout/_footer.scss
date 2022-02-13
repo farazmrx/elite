@@ -7,6 +7,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include respond(smallphone) {
+            justify-content: space-around;   
+        }
 
         &-text {
             flex: 0 0 45%;
@@ -28,6 +31,9 @@
         display: flex;
         justify-content: space-between;
         padding: 10rem 0;
+        @include respond(smallphone) {
+            justify-content: space-around;   
+        }
 
         &-item {
             margin-bottom: 2rem;
@@ -43,6 +49,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include respond(smallphone) {
+            justify-content: space-around;   
+        }
 
         &-social {
             i {
