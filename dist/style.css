@@ -22,6 +22,50 @@ ul, li {
 a {
   text-decoration: none; }
 
+.container {
+  display: grid;
+  grid-template-rows: 7rem calc(100vh - 7rem) min-content 30vw repeat(3, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.features {
+  grid-column: center-start / center-end;
+  background-color: orange; }
+
+.free {
+  grid-column: center-start / center-end;
+  background-color: deeppink; }
+
+.hero__content {
+  grid-column: center-start / col-end 6;
+  background-color: rebeccapurple; }
+
+.hero__img {
+  grid-column: col-start 7 / full-end;
+  grid-row: 1 / 3;
+  background-color: aqua; }
+
+.integrate__content {
+  grid-column: center-start / col-end 5;
+  background-color: olive; }
+
+.integrate__img {
+  grid-column: col-start 6 / center-end;
+  background-color: yellow; }
+
+.tailored {
+  grid-column: center-start / center-end;
+  background-color: pink; }
+
+.header {
+  grid-column: center-start / center-end;
+  grid-row: 1 / 2;
+  background-color: red;
+  z-index: 5; }
+
+.footer {
+  grid-column: full-start / full-end;
+  background-color: forestgreen; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
