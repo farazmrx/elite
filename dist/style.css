@@ -59,8 +59,26 @@ a {
 .header {
   grid-column: center-start / center-end;
   grid-row: 1 / 2;
-  background-color: red;
-  z-index: 5; }
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    width: 13rem;
+    height: 50%; }
+  .header__list {
+    display: flex; }
+  .header__item {
+    margin-left: 2rem; }
+  .header__link {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase; }
+    .header__link--btn {
+      padding: 1.5rem 3rem;
+      border: 2px solid #fff;
+      border-radius: 50px; }
 
 .footer {
   grid-column: full-start / full-end;
