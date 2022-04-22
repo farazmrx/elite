@@ -1,0 +1,23 @@
+.heading {
+    &--primery {
+        font-size: 2.5rem;
+        font-family: $font-orelega;
+        font-weight: 300;
+    }
+
+    &--secondary {
+        font-size: 2rem;
+    }
+}
+
+.paragraph {
+    &--primery {
+        font-size: 1.4rem;
+        color: $color-gray-light-3;
+    }
+    
+    &--secondary {
+        font-size: 1.3rem;
+        color: $color-gray-dark-1;
+    }
+}

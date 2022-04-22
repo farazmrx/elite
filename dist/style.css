@@ -27,6 +27,40 @@ a {
   grid-template-rows: 7rem 115vh min-content 30vw repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.heading--primery {
+  font-size: 2.5rem;
+  font-family: "Orelega One", cursive;
+  font-weight: 300; }
+
+.heading--secondary {
+  font-size: 2rem; }
+
+.paragraph--primery {
+  font-size: 1.4rem;
+  color: #8d8d8d; }
+
+.paragraph--secondary {
+  font-size: 1.3rem;
+  color: #424242; }
+
+.u-mb-smaller {
+  margin-bottom: 1rem; }
+
+.u-mb-small {
+  margin-bottom: 2rem; }
+
+.u-mb-medium {
+  margin-bottom: 3rem; }
+
+.u-mb-large {
+  margin-bottom: 4rem; }
+
+.u-mb-larger {
+  margin-bottom: 6rem; }
+
+.u-text-center {
+  text-align: center; }
+
 .btn {
   font-size: 1.6rem;
   padding: 1.5rem 3rem;
@@ -41,7 +75,19 @@ a {
 
 .features {
   grid-column: center-start / center-end;
-  background-color: orange; }
+  margin: 10rem 0;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .features__header {
+    grid-column: col-start 4/ col-end 9; }
+  .features__boxes {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 4rem; }
+  .features__box {
+    text-align: center; }
 
 .free {
   grid-column: center-start / center-end;
