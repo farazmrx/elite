@@ -1,0 +1,15 @@
+.btn {
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    &--primery {
+        background-color: $color-primery-dark;
+        color: $color-white;
+    }
+
+    &--secondary {
+        background-color: $color-gray-light-1;
+        color: $color-primery-dark;
+    }
+}

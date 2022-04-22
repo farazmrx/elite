@@ -1,12 +1,42 @@
 .hero {
     &__content {
-        grid-column: center-start / col-end 6;
-        background-color: rebeccapurple;
+        grid-column: center-start / col-end 5;
+        padding: 5rem 0;
+
+        &--object {
+            margin-bottom: 3rem;
+        }
+
+        &--header {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 3rem;
+        }
+
+        &--paragraph {
+            font-size: 2rem;
+            font-family: $font-indie;
+            font-weight: 900;
+            margin-bottom: 3rem;
+        }
+
+        &--btn,
+        &--share {
+            margin-bottom: 5rem;
+        }
+
+        &--share {
+            font-size: 1.6rem;
+        }
     }
 
     &__img {
         grid-column: col-start 7 / full-end;
         grid-row: 1 / 3;
-        background-color: aqua;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
