@@ -1,4 +1,47 @@
 .footer {
     grid-column: full-start / full-end;
-    background-color: forestgreen;
+    background-color: $footer-color;
+    padding: 5rem 0;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    &__content {
+        grid-column: center-start / center-end;
+
+        &--header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 7rem;
+
+            div {
+                h3 {
+                    color: $color-white;
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    color: $color-gray-light-3;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &--main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-item {
+                margin-bottom: 2rem;
+            }
+
+            &-link {
+                font-size: 1.6rem;
+                color: $color-gray-light-3;
+            }
+        }
+    }
 }
