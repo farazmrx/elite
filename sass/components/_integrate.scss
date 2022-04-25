@@ -1,11 +1,16 @@
 .integrate {
     &__content {
-        grid-column: center-start / col-end 5;
-        background-color: olive;
+        grid-column: center-start / col-end 4;
+        display: grid;
+        align-items: center;
     }
 
     &__img {
         grid-column: col-start 6 / center-end;
-        background-color: yellow;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
