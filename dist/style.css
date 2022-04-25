@@ -69,6 +69,10 @@ a {
   .btn--primery {
     background-color: #aa00fe;
     color: #fff; }
+    .btn--primery-dark {
+      color: #fff;
+      background-color: #33334f;
+      font-weight: 900; }
   .btn--secondary {
     background-color: #eeecec;
     color: #aa00fe; }
@@ -129,7 +133,11 @@ a {
 
 .free {
   grid-column: center-start / center-end;
-  background-color: deeppink; }
+  margin: 5rem 0 15rem 0; }
+  .free__content--btn img {
+    position: relative;
+    bottom: -35px;
+    left: 10px; }
 
 .hero__content {
   grid-column: center-start / col-end 5;

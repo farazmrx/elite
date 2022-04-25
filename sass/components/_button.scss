@@ -6,6 +6,12 @@
     &--primery {
         background-color: $color-primery-dark;
         color: $color-white;
+
+        &-dark {
+            color: $color-white;
+            background-color: $footer-color;
+            font-weight: 900;
+        }
     }
 
     &--secondary {

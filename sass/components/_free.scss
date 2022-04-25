@@ -1,4 +1,14 @@
 .free {
     grid-column: center-start / center-end;
-    background-color: deeppink;
+    margin: 5rem 0 15rem 0;
+
+    &__content {
+        &--btn {
+            img {
+                position: relative;
+                bottom: -35px;
+                left: 10px;
+            }
+        }
+    }
 }
