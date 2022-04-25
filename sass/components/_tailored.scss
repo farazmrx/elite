@@ -1,4 +1,19 @@
 .tailored {
     grid-column: center-start / center-end;
-    background-color: pink;
+    margin: 10rem 0 5rem 0;
+    padding: 5rem 0;
+
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+    &__header {
+        grid-column: col-start 4/ col-end 9;
+    }
+
+    &__boxes {
+        grid-column: col-start 3/ col-end 10;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-row-gap: 3rem;
+    }
 }
