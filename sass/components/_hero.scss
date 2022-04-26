@@ -3,6 +3,10 @@
         grid-column: center-start / col-end 5;
         padding: 3rem 0;
 
+        @include respond(tablet) {
+            grid-column: center-start / center-end;
+        }
+
         &--object {
             margin-bottom: 3rem;
 
@@ -58,6 +62,10 @@
 
         @include respond(laptop) {
             grid-column: col-start 6 / full-end;
+        }
+
+        @include respond(tablet) {
+            display: none;
         }
 
         img {

@@ -3,10 +3,17 @@
         grid-column: center-start / col-end 4;
         display: grid;
         align-items: center;
+
+        @include respond(tablet) {
+            grid-column: center-start / center-end;
+        }
     }
 
     &__img {
         grid-column: col-start 6 / center-end;
+        @include respond(tablet) {
+            grid-column: center-start / center-end;
+        }
 
         img {
             width: 100%;

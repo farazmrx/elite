@@ -8,6 +8,10 @@
 
     &__header {
         grid-column: col-start 4/ col-end 9;
+
+        @include respond(tablet) {
+            grid-column: col-start 2 / col-end 11;
+        }
     }
 
     &__boxes {
@@ -48,12 +52,19 @@
         color: $color-white;
         font-size: 3rem;
         margin-bottom: .5rem;
+
+        @include respond(tablet) {
+            font-size: 2rem;
+        }
     }
 
     &__paragraph {
         color: $color-white;
         font-size: 1.3rem;
         margin-bottom: 1rem;
+        @include respond(tablet) {
+            font-size: 1rem;
+        }
     }
 
     &__form {
@@ -66,6 +77,10 @@
         padding: 1.5rem;
         border-radius: 50px;
         border: none;
+
+        @include respond(tablet) {
+            padding: 1rem;
+        }
     }
 
     &__btn {
@@ -77,6 +92,10 @@
         border: none;
         color: $color-gray-light-3;
         cursor: pointer;
+
+        @include respond(tablet) {
+            padding: .5rem 2rem;
+        }
     }
 }
 

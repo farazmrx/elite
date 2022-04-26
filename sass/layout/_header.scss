@@ -2,6 +2,10 @@
     grid-column: center-start / center-end;
     grid-row: 1 / 2;
     z-index: 5;
+    @include respond(tablet) {
+        background: linear-gradient($color-primery-dark, $color-primery-light);
+        grid-column: full-start / full-end;
+    }
 
     display: flex;
     justify-content: space-between;

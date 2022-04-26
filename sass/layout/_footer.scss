@@ -15,8 +15,16 @@
             align-items: center;
             margin-bottom: 7rem;
 
+            @include respond(tablet) {
+                display: grid;
+            }
+
             div {
                 width: 50%;
+
+                @include respond(tablet) {
+                    width: 100%;
+                }
                 h3 {
                     color: $color-white;
                     font-size: 2.5rem;
@@ -33,6 +41,12 @@
         &--btn {
             width: 60%;
             text-align: right;
+
+            @include respond(tablet) {
+                width: 100%;
+                text-align: left;
+                margin-top: 4rem;
+            }
         }
 
         &--main {
@@ -64,6 +78,10 @@
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 3rem;
             grid-column-gap: 10rem;
+
+            @include respond(tablet) {
+                grid-template-columns: 1fr;
+            }
         }
 
         &--link {

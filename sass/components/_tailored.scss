@@ -8,6 +8,10 @@
 
     &__header {
         grid-column: col-start 4/ col-end 9;
+
+        @include respond(tablet) {
+            grid-column: col-start 2 / col-end 11;
+        }
     }
 
     &__boxes {
@@ -19,6 +23,11 @@
         @include respond(laptop) {
             grid-column: center-start / center-end;
             grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        }
+
+        @include respond(tablet) {
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            justify-items: center;
         }
     }
 }
