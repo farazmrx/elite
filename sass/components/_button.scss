@@ -3,6 +3,11 @@
     padding: 1.5rem 3rem;
     border-radius: 50px;
     text-transform: uppercase;
+
+    @include respond(laptop) {
+        font-size: 1.4rem;
+        padding: 1.2rem 2.4rem;
+    }
     &--primery {
         background-color: $color-primery-dark;
         color: $color-white;
