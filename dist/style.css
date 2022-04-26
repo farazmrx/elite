@@ -244,6 +244,22 @@ a {
       .footer__content--main-link {
         font-size: 1.6rem;
         color: #8d8d8d; }
+  .footer__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer__tags--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 10rem; }
+  .footer__tags--link {
+    font-size: 1.6rem;
+    color: #8d8d8d; }
+  .footer__copyright {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
