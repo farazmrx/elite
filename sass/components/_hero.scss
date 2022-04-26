@@ -1,7 +1,7 @@
 .hero {
     &__content {
         grid-column: center-start / col-end 5;
-        padding: 5rem 0;
+        padding: 3rem 0;
 
         &--object {
             margin-bottom: 3rem;
@@ -22,11 +22,17 @@
 
         &--btn,
         &--share {
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
         }
 
         &--share {
             font-size: 1.6rem;
+        }
+
+        &--company {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
