@@ -31,6 +31,13 @@ a {
     text-decoration: none;
 }
 
+
+.hidden {
+    @include respond(laptop) {
+        display: none;
+    }
+}
+
 .container {
     display: grid;
     grid-template-rows: 7rem 115vh min-content 40vw repeat(3, min-content);

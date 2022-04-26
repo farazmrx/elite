@@ -25,6 +25,10 @@ ul, li {
 a {
   text-decoration: none; }
 
+@media (max-width: 64em) {
+  .hidden {
+    display: none; } }
+
 .container {
   display: grid;
   grid-template-rows: 7rem 115vh min-content 40vw repeat(3, min-content);
@@ -111,6 +115,9 @@ a {
     @media (max-width: 48em) {
       .features__header {
         grid-column: col-start 2 / col-end 11; } }
+    @media (max-width: 31.25em) {
+      .features__header {
+        grid-column: full-start / full-end; } }
   .features__boxes {
     grid-column: center-start / center-end;
     display: grid;
@@ -135,6 +142,9 @@ a {
           height: 150%;
           right: 0;
           grid-column: 1 / -1; } }
+      @media (max-width: 31.25em) {
+        .features__box--sub {
+          height: 100%; } }
 
 .subscribe__header {
   color: #fff;
@@ -143,6 +153,9 @@ a {
   @media (max-width: 48em) {
     .subscribe__header {
       font-size: 2rem; } }
+  @media (max-width: 31.25em) {
+    .subscribe__header {
+      font-size: 1.6rem; } }
 
 .subscribe__paragraph {
   color: #fff;
@@ -164,6 +177,9 @@ a {
   @media (max-width: 48em) {
     .subscribe__input {
       padding: 1rem; } }
+  @media (max-width: 31.25em) {
+    .subscribe__input {
+      position: relative; } }
 
 .subscribe__btn {
   position: absolute;
@@ -174,12 +190,13 @@ a {
   border: none;
   color: #8d8d8d;
   cursor: pointer; }
+  @media (max-width: 31.25em) {
+    .subscribe__btn {
+      position: relative;
+      right: 0; } }
   @media (max-width: 48em) {
     .subscribe__btn {
       padding: .5rem 2rem; } }
-
-.hidden {
-  display: none; }
 
 .free {
   grid-column: center-start / center-end;
@@ -257,6 +274,9 @@ a {
   @media (max-width: 48em) {
     .integrate__img {
       grid-column: center-start / center-end; } }
+  @media (max-width: 31.25em) {
+    .integrate__img {
+      display: none; } }
   .integrate__img img {
     width: 100%;
     height: 100%; }
@@ -272,6 +292,9 @@ a {
     @media (max-width: 48em) {
       .tailored__header {
         grid-column: col-start 2 / col-end 11; } }
+    @media (max-width: 31.25em) {
+      .tailored__header {
+        grid-column: full-start / full-end; } }
   .tailored__boxes {
     grid-column: col-start 3/ col-end 10;
     display: grid;
