@@ -238,13 +238,18 @@ a {
       justify-content: space-between;
       align-items: center;
       margin-bottom: 7rem; }
-      .footer__content--header div h3 {
-        color: #fff;
-        font-size: 2.5rem; }
-      .footer__content--header div p {
-        color: #8d8d8d;
-        font-size: 1.2rem;
-        font-weight: 700; }
+      .footer__content--header div {
+        width: 50%; }
+        .footer__content--header div h3 {
+          color: #fff;
+          font-size: 2.5rem; }
+        .footer__content--header div p {
+          color: #8d8d8d;
+          font-size: 1.2rem;
+          font-weight: 700; }
+    .footer__content--btn {
+      width: 60%;
+      text-align: right; }
     .footer__content--main {
       display: flex;
       justify-content: space-between;
