@@ -11,6 +11,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 100%; } }
 
 body {
   font-family: sans-serif;
@@ -88,7 +91,7 @@ a {
   .features__boxes {
     grid-column: center-start / center-end;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 4rem; }
   .features__box {
     text-align: center; }
@@ -100,6 +103,9 @@ a {
       right: 50%;
       padding: 3rem;
       border-radius: 10px; }
+      @media (min-width: 112.5em) {
+        .features__box--sub {
+          height: 100%; } }
 
 .subscribe__header {
   color: #fff;
