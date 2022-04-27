@@ -32,7 +32,7 @@ a {
 }
 
 
-.hidden {
+.hiddenn {
     @include respond(laptop) {
         display: none;
     }

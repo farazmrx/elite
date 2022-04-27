@@ -26,7 +26,7 @@ a {
   text-decoration: none; }
 
 @media (max-width: 64em) {
-  .hidden {
+  .hiddenn {
     display: none; } }
 
 .container {
@@ -282,7 +282,8 @@ a {
     height: 100%; }
 
 .tailored {
-  grid-column: center-start / center-end;
+  position: relative;
+  grid-column: full-start / full-end;
   margin: 10rem 0 5rem 0;
   padding: 5rem 0;
   display: grid;
@@ -300,6 +301,8 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     grid-row-gap: 3rem; }
+    .tailored__boxes--img {
+      cursor: pointer; }
     @media (max-width: 64em) {
       .tailored__boxes {
         grid-column: center-start / center-end;
@@ -308,6 +311,48 @@ a {
       .tailored__boxes {
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         justify-items: center; } }
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none; }
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none; }
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10; }
+  .modal__header {
+    font-size: 2.5rem;
+    margin-bottom: 2rem; }
+  .modal__paragraph {
+    font-size: 1.8rem; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5; }
 
 .header {
   grid-column: center-start / center-end;
